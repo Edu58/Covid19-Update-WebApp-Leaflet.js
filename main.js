@@ -60,6 +60,9 @@ function showInMap(data) {
     );
 
     marker.bindPopup(popups);
+    marker.on("click", function () {
+      this.openPopup();
+    })
      marker.on("mouseover", function (e) {
        this.openPopup();
      });
