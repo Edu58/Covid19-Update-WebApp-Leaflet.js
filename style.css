@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.map {
+  height: 90vh;
+  width: 100%;
+}
+
+.flags {
+  width: 95%;
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+.popupContent {
+    font-weight: 700;
+}
+
+div.about-popup {
+  position: fixed;
+  top: 15%;
+  left: 25%;
+  height: auto;
+  width: 50%;
+  display: none;
+  z-index: 1000;
+  transition: all 0.2s;
+}
+
+div.about-popup.show {
+  display: block;
+}
+
+div.about-popup .fa-times {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  margin: 0.5rem;
+  transition: 0.5s;
+}
+
+div.about-popup .fa-times:hover {
+  color: red;
+  transform: scale(1.2);
+}
+
+div.about-popup p {
+  margin-bottom: 3rem;
+}
+
+div.about-popup .made-by {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+div.about-popup .made-by i {
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+  div.about-popup {
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    height: auto;
+    width: 90%;
+    display: none;
+    transition: all 0.2s;
+  }
+}
