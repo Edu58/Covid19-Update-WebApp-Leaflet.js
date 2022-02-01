@@ -3,6 +3,8 @@ This covid19 info webapp is made using leaflet.js with esri basemaps . The data 
 
 ## Live  Link - https://covidinfomapping.netlify.app/
 
+![covid 19 map](covid.png)
+
 ### Summary
 
 This web-app provides the latest covid19 data/info. The data used in this web-app is sourced from an API that provides up-to-date covid19 data hence the accuracy of the information is assured.
